@@ -16,6 +16,7 @@ const AuthButton = withRouter(
           setAuthentication(false)
           history.push("/home")
         }}
+        data-qa="button-navigation-logout"
       >
         Log out
       </button>
@@ -24,6 +25,7 @@ const AuthButton = withRouter(
         onClick={() => {
           history.push("/login")
         }}
+        data-qa="button-navigation-login"
       >
         Log In
       </button>
@@ -54,9 +56,20 @@ const Login = withRouter(({ history, setAuthentication }) => (
   <div className="form">
     <h2>Please login to continue</h2>
     <p>Requires no credentials, just click log in</p>
-    <input type="email" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Password" />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      data-qa="input-email"
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      data-qa="input-password"
+    />
     <button
+      data-qa="button-login"
       onClick={() => {
         history.push("/dashboard")
         setAuthentication(true)
