@@ -16,7 +16,10 @@
     "build": "react-scripts build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "globals": {
+      "cy": true
+    }
   },
   "browserslist": {
     "production": [
