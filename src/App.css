@@ -1,0 +1,57 @@
+.app {
+  text-align: center;
+}
+
+.app nav {
+  display: flex;
+  align-content: center;
+  border-bottom: 2px solid #d6d6d6;
+  margin-bottom: 2em;
+}
+
+.app nav > * {
+  flex: 1 auto;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.app nav button {
+  flex: 0;
+  min-width: 10em;
+}
+
+.app h1 {
+  font: 2.5em/1.6 sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.app h2 {
+  font: 1.2em/1.6 sans-serif;
+  letter-spacing: -0.05em;
+  margin-bottom: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.form > * {
+  flex: 1 auto;
+  margin-bottom: 2em;
+}
+
+input {
+  padding: 10px 15px;
+  font: 1em/1.6 sans-serif;
+  border: 1px solid #d6d6d6;
+}
+
+button {
+  padding: 10px 15px;
+  font: 1em/1.6 sans-serif;
+  background-color: #d6d6d6;
+}
