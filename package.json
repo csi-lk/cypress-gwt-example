@@ -2,7 +2,14 @@
   "name": "cypress-gwt-example",
   "description": "Example repo showing how to use Cypress with Cucumber Feature files",
   "version": "0.1.0",
-  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "yarn cypress cy:open",
+    "test:ci": "yarn start-server-and-test start 3000 cy:run",
+    "cy:open": "yarn cypress open",
+    "cy:run": "yarn cypress run"
+  },
   "dependencies": {
     "fsevents": "^2.0.7",
     "react": "^16.9.0",
@@ -10,10 +17,13 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.1.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "test": "yarn cypress open",
-    "build": "react-scripts build"
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.16.0",
+    "start-server-and-test": "^1.10.2"
+  },
+  "resolutions": {
+    "eslint-loader": "3.0.2"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -32,9 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cypress": "^3.4.1",
-    "cypress-cucumber-preprocessor": "^1.16.0"
   }
 }
