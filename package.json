@@ -5,10 +5,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "yarn cypress cy:open",
+    "test": "yarn cy:open",
     "test:ci": "yarn start-server-and-test start 3000 cy:run",
     "cy:open": "yarn cypress open",
-    "cy:run": "yarn cypress run"
+    "cy:run": "yarn cypress run --record --key $CYPRESS_DASHBOARD_KEY"
   },
   "dependencies": {
     "fsevents": "^2.0.7",
