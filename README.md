@@ -2,7 +2,15 @@
 
 > Example repo showing how to use Cypress with Cucumber Feature files
 
-A companion to @csi-lk's talk on "How to get your product owners to write your functional tests" this repo gives you some simple examples on how to connect Cypress with Cucumber and test an app
+A companion to [Callum Silcock's](https://csi.lk) talk on "How to get your product owners to write your functional tests" this repo gives you some simple examples on how to connect Cypress with Cucumber and test an app
+
+## 🙊 The Talk
+
+If you missed the talk check out:
+
+- [Speakerdeck - External (slides)](https://speakerdeck.com/csilk/then-with-cypress)
+- [PDF - Here (slides)](./talk/using-gwt-with-cypress.pdf)
+- [Raw markdown - Here (notes + slides)](./talk/using-gwt-with-cypress-raw.md)
 
 ## 😎 How It Works
 
